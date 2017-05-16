@@ -1,10 +1,5 @@
 # Galaxy Administrators Course
 
-dagobah - The Solar System for Galaxy Training
-> "The planet shown in Dagobah, in the Sluis sector, is a world of murky swamps, steaming bayous, and petrified forests."
-
----
-
 ## What is this?
 
 This repository is a framework and a guide for delivering Galaxy Administration Trainings.
@@ -57,3 +52,9 @@ Shortcuts:
 ## Reporting bugs and issues
 
 Please [create an issue](https://github.com/galaxyproject/dagobah-training/issues) in GitHub.
+
+---
+
+# dagobah - The Solar System for Galaxy Training
+> "The planet shown in Dagobah, in the Sluis sector, is a world of murky swamps, steaming bayous, and petrified forests."
+
