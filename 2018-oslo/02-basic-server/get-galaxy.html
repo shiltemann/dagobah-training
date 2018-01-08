@@ -50,13 +50,14 @@ For OS X/Linux/Windows w/ Linux Subsystem or OpenSSH:
 $ ssh -L 8080:localhost:8080 ubuntu@<your_ip>
 ```
 
-For PuTTY on Windows:
+For [PuTTY](http://www.putty.org/) on Windows:
 - Create a session
 - See [instructions here](http://realprogrammers.com/how_to/set_up_an_ssh_tunnel_with_putty.html).
 - User: ubuntu
 - Host Name: `<your_ip>`
 - (Tunnel) Source port: 8080
 - (Tunnel) Destination: 127.0.0.1:8080
+- (Tunnel) Click "Add"
 
 ---
 # Requirements
@@ -102,6 +103,24 @@ For the rolling stable release: `git checkout master`<sup>[1]</sup>.
 You should see default Galaxy running.
 
 .footnote[Note that first startup needs internet connection and takes longer than the subsequent ones.]
+
+---
+# Locale issues when starting Galaxy?
+
+Galaxy and the dependent programs requires US locale so if you have a
+different one set on your machine, you may get an exception starting Galaxy
+that points to a locale issue.
+
+To fix, do the following in your VM:
+```
+sudo vi /etc/ssh/sshd_config
+# Comment out the following line
+AcceptEnv LANG LC_*
+# Save & exit
+# Restart ssh service
+sudo service restart sshd
+```
+Then exit your ssh session and reconnect. Start Galaxy and it should run fine.
 
 ---
 # What happened?
