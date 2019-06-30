@@ -1,5 +1,6 @@
 These are the Galaxy Admin materials from the past trainings. They were built from sources in [this repository](https://github.com/galaxyproject/dagobah-training/).
 
+* [2019 GCC](https://galaxyproject.github.io/dagobah-training/2019-gcc/)
 * [2019 Penn State](https://galaxyproject.github.io/dagobah-training/2019-pennstate/)
 * [2018 GCCBOSC](https://galaxyproject.github.io/dagobah-training/2018-gccbosc/)
 * [2018 Cape Town](https://galaxyproject.github.io/dagobah-training/2018-cape-town/)
